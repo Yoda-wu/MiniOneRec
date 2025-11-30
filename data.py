@@ -789,7 +789,7 @@ class SidItemFeatDataset(Dataset):
         return f"""### User Input: 
 {prompt}
 
-### Response:\n{response}"""
+### Response:\n"""
     
     def pre(self, idx):
         if self.tokenizer is None:
@@ -941,7 +941,7 @@ class RLTitle2SidDataset(Dataset):
         return f"""### User Input: 
 {prompt}
 
-### Response:\n{response}"""
+### Response:\n"""
     
     def pre(self, idx):
         data_point = self.data[idx]
@@ -1040,7 +1040,7 @@ class RLSeqTitle2SidDataset(Dataset):
         return f"""### User Input: 
 {prompt}
 
-### Response:\n{response}"""
+### Response:\n"""
     
     def pre(self, idx):
         history_data = self.get_history(self.data.iloc[idx])
@@ -1152,7 +1152,7 @@ class RLSid2TitleDataset(Dataset):
         return f"""### User Input: 
 {prompt}
 
-### Response:\n{response}"""
+### Response:\n"""
     
     def pre(self, idx):
         data_point = self.data[idx]
@@ -1466,7 +1466,7 @@ class FusionSeqRecDataset(Dataset):
         return f"""### User Input: 
 {prompt}
 
-### Response:\n{response}"""
+### Response:\n"""
     
     def pre(self, idx):
         instruction = """Below is an instruction that describes a task, paired with an input that provides further context. Write a response that appropriately completes the request. 
