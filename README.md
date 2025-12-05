@@ -217,6 +217,7 @@ bash rqkmeans_constrained.sh
 ```
 pip install k_means_constrained
 pip install polars
+bash rqkmeans_constrained.sh
 bash rqkmeans_plus.sh
 ```
 
